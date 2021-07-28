@@ -137,6 +137,10 @@ hr {
   padding-inline-start: 0px;
 }
 
+.footer img {
+  width: 50px;
+}
+
 .footer-footer {
   color: var(--dark-color);
   font-weight: lighter;
