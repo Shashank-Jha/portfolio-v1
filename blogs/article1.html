@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>== vs === in javascript | spyder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>Spyder's blog</nav>
+    <header> <a href="/blogs.html"> ⬅ back </a> </header>
+    <main class="post">
+        <h1 class="article-heading">"==" vs "===" in JavaScript</h1>
+        <h2 class="article-heading2">what is the difference between == & === operators in javacript?</h2>
+        <P class="published-date"> 5th August, 2021</P>
+        <p class="author">by Shashank Bhushan Jha  | spyder |</p>
+        <p class="blog-cover">
+            <img src="../image/article1-cover.png" alt="blog-cover">
+        </p>
+        <article class="content">
+            
+            <p>Hey, developers 😀 hope you must be doing well and thankyou for reading this blog about "DIFFERENCE BETWEEN == & ===" in JavaScript.<br>
+                I hope after reading this post, the difference between these two operators becomes clear to you.<br>
+                <br>
+                So, when I got started learning JavaScript, after doing Java for a long time, encountering "===" operator was a confusion for me.<br><br> Firstly I taught maybe it was a typo in the tutorial I was following but then I came to know that "===" is a real thing. Then for I long time I believed "==" operator in javascript is written "===" 😅😆, but after sometime I realised that in javascript both "==" & "===" exsists.
+                <br>
+            </p>
+            <br>
+            <h2> difference between "==" & "===" in javascript </h2>
+            <p>Both == and === operators are equality operators in javascript. The main diffrence between both is : <br>
+            <ul>
+                <li> Before comparision, the == operator changes the given variables in a same type and compares the values. </li>
+                <li>While, the === operator strictly compares the variables types as well as values.</li>
+            </ul></p>
+            <p>Now, for example see the below code</p>
+            <img src="../image/article1-code.png" alt="code">
+            <p>Output :</p>
+            <img src="../image/article1-console.png" alt="output">
+            <p>So, let me explain what happened in the above code.</p>
+            <p><ul>
+                <li>When we compared var 'a' with var 'b' using '==', then javascript compares both the values and as the value of both variables are 10, the output is "True". </li>
+                <li>Now, when we again compare var 'a' with var 'b' using '===', then javascript compared both the variable's values as well as their data-type and as the value & type of both variables are 10, the output is "True".</li>
+
+            </ul>
+            Now, let's see what happened when we compared var 'a' with var 'c'.
+            <ul>
+                <li>In this case, when we compare var 'a' with var 'c' using '==' operator, though the type of var 'c' is of a string but '==' compares only the value and the output is "true".</li>
+                <li>But, in this case when we compare var 'a' with var 'c' using '===' operator, the operator checks and compares both the value as well as the type and hence as var 'a' is of type integer and var 'c' is of type string, the output is "False". </li>
+            </ul>
+        </p>
+
+        <p>
+            <h2>Conclusion</h2>
+            <p>I hope this little effort of mine to explain the difference between '==' and '===' operator in javascript made you understand the difference well.<br>
+                So to conclude, both the operators are equality check operators but '===' is strict-equality operator.
+                <br>
+                When we use '==' operator it only compares the values, on the other hand "===" operator compares value as well as the type of the given data. 
+            </p>
+            <br>
+        </p>
+
+
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-header">
+            Connect with me  
+        </div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link " href="https://github.com/Shashank-Jha">
+                    <img src="../image/Github_black.svg" alt="github">
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link " href="https://www.linkedin.com/in/shashankbhushanjha/">
+                    <img src="../image/LinkedIN_black.svg" alt="linkedIn">
+                </a>
+            </li>
+        
+        </ul>
+        <div class="footer-footer">
+            created by shashank 
+        </div>
+    </footer>
+
+</body>
+</html>
