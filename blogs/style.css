@@ -42,6 +42,17 @@ header a {
 .blog-cover img {
   max-width: 800px;
 }
+
+@media only screen and (max-width: 800px) {
+  .blog-cover img {
+    max-width: 300px;
+  }
+
+  .blog-code-img {
+    max-width: 300px;
+  }
+}
+
 .post {
   display: block;
   margin: auto;

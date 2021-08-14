@@ -100,7 +100,23 @@ hr {
   margin: auto;
   padding-bottom: 0;
 }
+@media only screen and (max-width: 600px) {
+  .hero .hero-img {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    padding-bottom: 0;
+  }
 
+  .nav-pill {
+    padding-right: 8rem;
+  }
+  .navigation .link-active {
+    font-weight: bold;
+    color: var(--secondary-color);
+    border-style: none;
+  }
+}
 .hero .heading-inverse {
   color: var(--secondary-color);
 }
